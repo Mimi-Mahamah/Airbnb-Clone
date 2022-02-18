@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://kit.fontawesome.com/a20c4e6c94.js" crossorigin="anonymous"></script>
+    <script async src="index.js"></script>
+    <title>Find Homes on Airbnb</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<header class="main-header">
+    <img id="airbnb-logo" src="./images/Airbnb_logo.svg" alt="airbnb logo">
+    <div class="header">
+        <a href="https://www.airbnb.com/host/homes?">
+            <p class="heading3">Become a host</p>
+        </a>
+        <a href="https://www.airbnb.com/help?audience=guest">
+            <p class="heading3">Help</p>
+        </a>
+        <a href="https://www.airbnb.com/signup_login">
+            <p class="heading3">Sign up</p>
+        </a>
+        <a href="https://www.airbnb.com/login">
+            <p class="heading3">Log in</p>
+        </a>
+    </div>
+</header>
+
+<body>
+    <img src="./images/airbnb-house.jpg" alt="airbnb-house" class="airbnb-house">
+    <div class="search-homes">
+        <h1>Find places to stay on Airbnb</h1>
+        <p id="discover">Discover entire homes and private rooms perfect for any trip.</p>
+        <form action="">
+            <div class="location">
+                <label id="location-label" for="location">LOCATION</label>
+                <input type="text" id="location" placeholder="Anywhere">
+            </div>
+            <div class="add-date">
+                <label id="checkin-label" for="checkin">CHECK IN</label>
+                <input type="text" id="checkin" placeholder="Add Date" size="10">
+                <!-- checkout -->
+                <label id="checkout-label" for="checkout">CHECK OUT</label>
+                <input type="text" id="checkout" placeholder="Add Date" size="10">
+                <div class="date-divider">
+                </div>
+            </div>
+            <div class="people">
+                <div class="adults">
+                    <label for="adults" id="adults-label">ADULTS</label>
+                    <select name="adults" id="adults">
+                <option value="1">1</option>
+                <option value="2" selected>2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                </select>
+                </div>
+                <br>
+                <div class="children">
+                    <label for="children" id="children-label">CHILDREN</label>
+                    <select name="children" id="children">
+                    <option value="0" selected>0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                </select>
+                </div>
+            </div>
+            <h6 id="amenities">AMENITIES</h6>
+            <div class="buttons">
+                <button type="button" class="pets" id="pets">Pets Allowed</button>
+                <button type="button" class="wifi" id="wifi">Wifi</button>
+                <button type="button" class="tub" id="tub">Hot tub</button>
+            </div>
+            <button type="submit" class="search-button">
+                <i class="fas fa-search">
+                    <p id="search">Search</p>
+                    </i>
+            </button>
+        </form>
+    </div>
+    <!-- Host Section -->
+    <a href="https://www.airbnb.com/host/homes">
+        <img id="woman" src="./images/woman-in-home.jpg" alt="woman on counter">
+    </a>
+    <div class="hosting">
+        <p id="hosting">Try hosting</p>
+        <!-- I put the popup button and the blurb in a div so I could display them inline -->
+        <div class="earn">
+            <p id="earn">Earn up to $3,755/month by sharing your space in Seattle.</p>
+            <button data-modal-target="#modal" id="popup">
+                    <div id="question-mark">&quest;</div>
+                </button>
+        </div>
+        <button id="learn-more">Learn more</button>
+    </div>
+
+    <!-- popup section starts-->
+    <div class="modal active" id="modal">
+        <header class="modal-header">
+            <button data-close class="close" id="close1">&times;</button>
+        </header>
+        <section class="scroll">
+            <div class="modal-body">
+                <h2 class="modal-title">
+                    How we estimate your earning potential
+                </h2>
+                <p>We make a few simple assumptions and calculations to determine your earnings:</p>
+                <ul>
+                    <li>The estimate is based on median earnings for entire places that can host up to four guests. For a more accurate estimate, enter your info at
+                        <a href="airbnb.com/host">airbnb.com/host</a>.
+                    </li>
+                    <li>We take the median nightly price (before expenses, fees and taxes) based on booking data in your area from the last 12 months.</li>
+                    <li>We then multiply that price by the total number of occupied nights to get the monthly earnings estimate. To estimate the number of nights that you might host, we look at how often others in your area are hosting.</li>
+                </ul>
+                <p>Keep in mind, these are just estimates. How much you actually earn depends on a number of other factors such as your availability, price, acceptance and cancellation rates, any legal restrictions, and demand in your area.</p>
+                <p>Also, your ability to host may depend on the local laws in your area. You can find more information
+                    <a href="https://www.airbnb.com/help/article/376/what-legal-and-regulatory-issues-should-i-consider-before-hosting-on-airbnb">here</a>.
+                </p>
+            </div>
+        </section>
+        <footer class="modal-footer">
+            <button data-close class="close" id="close2">Close</button>
+        </footer>
+    </div>
+    <div id="overlay"></div>
+    <!-- popup section ends -->
+    <section class="reviews">
+        <p id="reviews">What guests are saying about homes in United States</p>
+        <p id="guests">Over
+            <b>72,000,000 guest reviews</b> with an average of
+            <b> 4.8 out of 5 stars</b>
+        </p>
+        <div class="home-section">
+            <a href="https://www.airbnb.com/" target="blank" rel="noreferrer" class="home-vertical">
+                <img src="./images/1st-home.jpg" alt="1st home" class="homes">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae dolore voluptate corrupti nesciunt nemo. Accusantium debitis necessitatibus repellat modi quod sequi delectus corrupti iste expedita nihil dolorum hic."</p>
+                <div class="guest-profile">
+                    <img src="./images/D'Andrea.jpg" alt="guest" class="guest">
+                    <div class="description">
+                        <p>
+                            <b>D'Andrea</b>
+                            <br>
+                            <span class="country">Istanbul</span>
+                        </p>
+                    </div>
+                </div>
+            </a>
+            <a href="https://www.airbnb.com/" target="blank" rel="noreferrer" class="home-vertical">
+                <img src="./images/2nd-home.jpg" alt="2nd home" class="homes">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae dolore voluptate corrupti nesciunt nemo."</p>
+                <div class="guest-profile">
+                    <img src="./images/diane.jpg" alt="guest" class="guest">
+                    <div class="description">
+                        <p>
+                            <b>Diane</b>
+                            <br>
+                            <span class="country">Armenia</span>
+                        </p>
+                    </div>
+                </div>
+            </a>
+            <a href="https://www.airbnb.com/" target="blank" rel="noreferrer" class="home-vertical" id="nopadding">
+                <img src="./images/3rd-home.jpg" alt="3rd home" class="homes">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae dolore voluptate corrupti nesciunt nemo. Accusantium debitis necessitatibus repellat modi quod sequi delectus corrupti iste expedita nihil dolorum hic, itaque recusandae."</p>
+                <div class="guest-profile">
+                    <img src="./images/michelle.jpg" alt="guest" class="guest">
+                    <div class="description">
+                        <p>
+                            <b>Michelle</b>
+                            <br>
+                            <span class="country">United States</span>
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+    <section class="descriptors">
+        <div class="customer-support">
+            <i class="far fa-comment-alt"></i>
+            <p>
+                <span id="custom-sup">24/7 customer support</span>
+                <br>
+                <span class="desc">Day or night, we’re here for you. Talk to our support team from anywhere in the world, any hour of day.</span>
+            </p>
+        </div>
+        <div class="host-req">
+            <img src="https://img.icons8.com/ios/50/000000/home--v3.png" id="home-icon" />
+            <p>
+                <span id="host-req">Global hosting requirements</span>
+                <br>
+                <span class="desc">hosts must meet hosting requirements and maintain a minimum rating to be on Airbnb.</span>
+            </p>
+        </div>
+        <div id="nopad" class="all-star">
+            <i id="star" class="far fa-star"></i>
+            <p>
+                <span id="all-star">All-star hosts</span>
+                <br>
+                <span class="desc">From fresh-pressed sheets to tips on where to get the best brunch, our hosts are full of local hospitality.</span>
+            </p>
+        </div>
+    </section>
+    <!-- BOOKING SECTION -->
+
+    <section class="booking-section">
+        <p id="booked">Just booked in United States</p>
+        <div class="bookings">
+            <a class="booking-links">
+                <img src="./images/book-1.jpg" alt="1st booking" class="booked">
+                <p class="place">Entire chalet in Skykomish
+                    <span>
+                    <i class="fas fa-star"></i>
+                </span>
+                    <span class="place-bold">4.85</span>
+                    <span>(692)</span>
+                </p>
+                <p class="place-desc">Tye Haus - A-Frame Cabin
+                    <br>
+                    <b>$401</b> / night
+                </p>
+            </a>
+            <!-- 2nd booking -->
+            <a class="booking-links">
+                <img src="./images/book-2.jpg" alt="2nd booking" class="booked">
+                <p class="place">Treehouse in Van Zandt County
+                    <span>
+                    <i class="fas fa-star"></i>
+                </span>
+                    <span class="place-bold">5</span>
+                    <span>(73)</span>
+                </p>
+                <p class="place-desc">Southern Dream-Brand New Lux...
+                    <br>
+                    <b>$233</b> / night
+                </p>
+            </a>
+            <!-- 3rd booking -->
+            <a class="booking-links">
+                <img src="./images/book-3.jpg" alt="2nd booking" class="booked">
+                <p class="place">Entire guesthouse in Tucson
+                    <span>
+                    <i class="fas fa-star"></i>
+                </span>
+                    <span class="place-bold">4.95</span>
+                    <span>(656)</span>
+                </p>
+                <p class="place-desc">Tucson Poet's Studio
+                    <br>
+                    <b>$95</b> / night
+                </p>
+            </a>
+            <!-- 4th booking -->
+            <a class="booking-links">
+                <img src="./images/book-4.jpg" alt="2nd booking" class="booked">
+                <p class="place">Farm stay in Saunderstown
+                    <span>
+                    <i class="fas fa-star"></i>
+                </span>
+                    <span class="place-bold">4.86</span>
+                    <span>(525)</span>
+                </p>
+                <p class="place-desc">Farm on the Coast - Near Newport
+                    <br>
+                    <b>$190</b> / night
+                </p>
+            </a>
+            <a href="https://www.airbnb.com/s/United-States/homes?click_referer=t%3ASEE_ALL%7Csid%3Ab0f77d81-e8c9-4acc-92bb-e54dfe695384%7Cst%3ALANDING_PAGE_HOMES&search_mode=regular_search&title_type=LANDING_PAGE_HOMES&place_id=ChIJCzYy5IS16lQRQrfeQ5K5Oxw&query=United%20States&refinement_paths%5B%5D=%2Fhomes"
+                target="-blank" rel="noreferrer">
+                <button class="booking-button">Show (2000&plus;)
+                <img src="https://img.icons8.com/material-outlined/24/000000/forward.png" />
+            </button>
+            </a>
+        </div>
+    </section>
+    <!-- When are you traveling? -->
+    <section class="travelling">
+        <p id="travel">When are you traveling?</p>
+        <p id="add-dates">Add dates for updated pricing and availability</p>
+        <br>
+        <button id="dates-button">Add dates</button>
+        <br>
+        <br>
+        <br>
+        <br>
+        <a href="https://www.airbnb.com/" id="airbnb">Airbnb</a> <img src="https://img.icons8.com/material-outlined/24/000000/forward.png" class="arrow" />
+        <a href="https://www.airbnb.com/s/homes" id="stays">Stays</a>
+        <img src="https://img.icons8.com/material-outlined/24/000000/forward.png" class="arrow" />
+        <span id="US">United States</span>
+    </section>
+</body>
+<footer>
+    <section class="footer">
+        <i class="far fa-copyright"></i>
+        <p class="foot">2022 Airbnb,Inc. All rights reserved</p>
+        <p class="foot">.</p>
+        <p class="foot">Privacy</p>
+        <p class="foot">.</p>
+        <p class="foot">Terms</p>
+        <p class="foot">.</p>
+        <p class="foot">Site Map</p>
+    </section>
+    <section class="icons">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
+        <img id="instagram" src="https://img.icons8.com/windows/32/000000/instagram.png" />
+    </section>
+</footer>
+
+</html>

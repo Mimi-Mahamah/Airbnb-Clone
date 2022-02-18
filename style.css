@@ -1,0 +1,812 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+* {
+    box-sizing: border-box;
+    /* border: solid 1px red; */
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+html {
+    height: 100vh;
+}
+
+
+/* Header */
+
+#airbnb-logo {
+    width: 6em;
+    margin-right: 43em;
+    bottom: 0.5em;
+}
+
+.header {
+    display: flex;
+    width: 19em;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: solid red 1px; */
+}
+
+.main-header {
+    display: flex;
+    height: 4em;
+    justify-content: center;
+}
+
+.heading3 {
+    font-size: 0.8em;
+    font-weight: bolder;
+}
+
+.heading3:hover {
+    cursor: pointer;
+}
+
+a {
+    color: black;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+
+/* MAIN */
+
+.airbnb-house {
+    height: 610px;
+    width: 74%;
+    border-radius: 0.5em;
+    margin-left: 25%;
+    object-fit: cover;
+    /* border: solid red 1px; */
+}
+
+
+/* Form */
+
+#discover {
+    position: relative;
+    bottom: 2em;
+    color: #717171;
+}
+
+label {
+    font-size: 0.6em;
+    font-weight: bolder;
+}
+
+#location-label {
+    z-index: 1;
+    position: relative;
+    bottom: 0.3em;
+    padding-left: 1.2em;
+}
+
+#location {
+    width: 26.5em;
+    height: 4em;
+    padding-left: 0.7em;
+    padding-top: 1em;
+    position: relative;
+    bottom: 2em;
+    border-radius: 0.5em;
+    border: solid 1.5px #d3d3d3;
+}
+
+.add-date {
+    display: flex;
+    position: relative;
+    bottom: 1em;
+}
+
+#checkin,
+#checkout {
+    height: 4em;
+    width: 13.3em;
+    padding-left: 0.7em;
+    padding-top: 1em;
+    border: solid 1.5px #d3d3d3;
+}
+
+#checkin {
+    border-right: none;
+    border-top-left-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+    background: linear-gradient(#d3d3d3, #d3d3d3) right /1px 60% no-repeat, white;
+}
+
+#checkout {
+    position: relative;
+    right: 5.74em;
+    border-left: none;
+    border-top-right-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    background: linear-gradient(#d3d3d3, #d3d3d3) left /1px 60% no-repeat, white;
+}
+
+#checkin-label,
+#checkout-label {
+    z-index: 1;
+    width: 8em;
+    height: 2em;
+    padding-left: 1em;
+    position: relative;
+    top: 1em;
+}
+
+#checkin-label {
+    position: relative;
+    left: 8em;
+}
+
+input::placeholder {
+    font-size: 1.2em;
+    position: relative;
+    top: 0.2em;
+}
+
+.people {
+    display: flex;
+    position: relative;
+    bottom: 1.5em;
+}
+
+#adults,
+#children {
+    height: 4em;
+    width: 13.3em;
+    padding-left: 0.7em;
+    padding-top: 1em;
+    border: solid 1.5px #d3d3d3;
+}
+
+#adults {
+    border-right: none;
+    border-top-left-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+    background: linear-gradient(#d3d3d3, #d3d3d3) right /1px 60% no-repeat, white;
+}
+
+#children {
+    background: linear-gradient(#d3d3d3, #d3d3d3) left /1px 60% no-repeat, white;
+    border-left: none;
+    border-top-right-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+}
+
+#adults-label,
+#children-label {
+    position: relative;
+    top: 2.5em;
+    padding-left: 1.4em;
+}
+
+.search-homes {
+    width: 26em;
+    height: 33em;
+    padding-left: 2em;
+    padding-right: 2em;
+    box-shadow: -6px 6px 20px #0003;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    bottom: 36em;
+    background-color: white;
+    border-radius: 0.5em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 23em;
+    position: relative;
+    padding: 1.5em;
+    right: 22.5em;
+    top: 10em;
+}
+
+#amenities {
+    position: relative;
+    right: 14em;
+    bottom: 0.5em;
+    margin: 0;
+    font-size: 10px;
+}
+
+
+/* Buttons */
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    right: 2em;
+}
+
+.pets:hover,
+.wifi:hover,
+.tub:hover {
+    border: solid 1px black;
+    cursor: pointer;
+}
+
+.pets.active,
+.wifi.active,
+.tub.active {
+    border: solid 2px black;
+}
+
+.pets:active,
+.wifi:active,
+.tub:active {
+    border: solid 2px black;
+    transform: scale(0.9, 0.9);
+}
+
+.pets,
+.wifi,
+.tub {
+    height: 2.8em;
+    border-radius: 1.5em;
+    border: solid 1px #d4d2d2;
+    background-color: white;
+    position: relative;
+    color: #424141;
+    font-size: 14px;
+}
+
+.pets {
+    width: 9em;
+}
+
+.wifi {
+    width: 5em;
+    margin-left: 0.5em;
+}
+
+.tub {
+    width: 7em;
+    margin-left: 0.5em;
+}
+
+.search-button {
+    height: 3.5em;
+    width: 27em;
+    background-image: linear-gradient(to right, #E61E4D, #E31C5F, #D70466);
+    border: hidden;
+    color: white;
+    position: relative;
+    top: 1em;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+
+.fa-search {
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 1em;
+}
+
+#search {
+    font-size: 17px;
+    color: white;
+    position: relative;
+    bottom: 1em;
+    padding-left: 0.5em;
+}
+
+
+/* Host section */
+
+#woman {
+    width: 100%;
+    height: 400px;
+    border-radius: 1em;
+    position: relative;
+    bottom: 30em;
+}
+
+.hosting {
+    position: relative;
+    font-weight: bold;
+    left: 2em;
+    bottom: 52em;
+    width: 28em;
+    height: 17em;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0em 1em 3em 3em;
+}
+
+#popup {
+    border-radius: 2em;
+    width: 1em;
+    height: 1em;
+    border-radius: 4em;
+    border: none;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 1.6em;
+    right: 17em;
+    cursor: pointer;
+}
+
+#popup:hover {
+    transform: scale(4, 4);
+    color: transparent;
+}
+
+
+/* Popup Modal */
+
+.modal {
+    position: absolute;
+    top: 300%;
+    padding-left: 1.5em;
+    padding-top: 1em;
+    border: solid 1px black;
+    border-bottom: none;
+    width: 51em;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+    background-color: white;
+    z-index: 1;
+    height: 28em;
+    transform: scale(0);
+    margin-left: 9em;
+    transition: all 0.5s ease-in-out;
+}
+
+.modal.active {
+    transform: scale(1);
+    top: 120%;
+}
+
+.scroll {
+    overflow-y: scroll;
+    padding-right: 1.5em;
+    height: 23.5em;
+    position: relative;
+    bottom: 2em;
+}
+
+.modal-header {
+    width: 40em;
+    position: static;
+    bottom: 28em;
+}
+
+.modal-title {
+    position: relative;
+}
+
+#close1 {
+    background: none;
+    overflow: visible;
+    border: none;
+    outline: none;
+    font-size: 30px;
+    font-weight: lighter;
+    height: 1.5em;
+    width: 1.5em;
+    position: relative;
+    right: 0.2em;
+    cursor: pointer;
+}
+
+#close1:hover {
+    background: rgba(221, 220, 220, 0.2);
+    border-radius: 50%;
+    height: 1.5em;
+    width: 1.5em;
+}
+
+.modal-body {
+    font-size: 15px;
+    overflow: scroll;
+    padding-top: 1.5em;
+}
+
+li {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+#close2 {
+    font-size: 15px;
+    background: none;
+    width: 5em;
+    height: 2em;
+    border: none;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#close2:hover {
+    background: rgba(221, 220, 220, 0.2);
+    border-radius: 0.5em;
+    font-weight: bold;
+}
+
+.modal-footer {
+    border: solid 1px black;
+    border-top: #ebebeb;
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    display: flex;
+    justify-content: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    position: relative;
+    bottom: 1.1em;
+    background-color: white;
+    width: 51em;
+    right: 1.56em;
+}
+
+#overlay {
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    pointer-events: none;
+    transition: all 0.5s ease;
+}
+
+#overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+
+/* Host styling */
+
+#question-mark {
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.earn {
+    display: flex;
+}
+
+#hosting {
+    font-size: 3em;
+    position: relative;
+    top: 0.5em;
+}
+
+#reviews {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+#earn {
+    font-size: 1.1em;
+    font-weight: lighter;
+    position: relative;
+    bottom: 1.2em;
+}
+
+#learn-more {
+    width: 8.4em;
+    padding: 0.9em;
+    border-radius: 0.5em;
+    border: none;
+    font-size: 1em;
+    color: black;
+    position: relative;
+    top: 0.5em;
+    cursor: pointer;
+}
+
+#learn-more:hover {
+    background-color: #d3d3d3;
+}
+
+
+/* Guest Reviews */
+
+.reviews {
+    position: relative;
+    bottom: 45em;
+}
+
+#guests {
+    color: #717171;
+    font-weight: lighter;
+    position: relative;
+    bottom: 1em;
+}
+
+.home-section {
+    display: flex;
+    position: relative;
+    bottom: 0.7em;
+}
+
+.home-vertical {
+    display: flex;
+    flex-direction: column;
+    padding-right: 1em;
+}
+
+#nopadding {
+    padding-right: -1em;
+}
+
+
+/* Images */
+
+.homes {
+    width: 22.38em;
+    height: 15em;
+    border-radius: 0.5em;
+    object-fit: cover;
+}
+
+
+/* Images */
+
+.fa-star {
+    color: #ff385c;
+}
+
+.stars {
+    padding-top: 1em;
+}
+
+.guest {
+    border-radius: 50%;
+    width: 3em;
+    height: 3em;
+}
+
+.guest-profile {
+    display: flex;
+    align-items: center;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1em;
+    justify-content: space-between;
+    font-size: smaller;
+}
+
+.country {
+    font-weight: lighter;
+    color: #717171;
+}
+
+
+/* Extra Descriptors */
+
+.descriptors {
+    display: flex;
+    position: relative;
+    bottom: 40em;
+}
+
+.fa-comment-alt {
+    font-size: 2em;
+}
+
+#home-icon {
+    width: 2em;
+}
+
+#star {
+    color: black;
+    font-size: 2em;
+}
+
+.customer-support,
+.host-req,
+.all-star {
+    border-bottom: 1px solid #d4d2d2b6;
+    border-top: 1px solid #d4d2d2b6;
+    padding: 3em 0em 3em 1em;
+    font-size: 0.9em;
+}
+
+#nopad {
+    padding-right: 0em;
+}
+
+#custom-sup,
+#host-req,
+#all-star {
+    font-weight: bolder;
+    font-size: 1.5em;
+}
+
+.desc {
+    position: relative;
+    top: 0.5em;
+}
+
+
+/* Just Booked Section */
+
+.booking-section {
+    position: relative;
+    bottom: 38em;
+}
+
+#booked {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.booked {
+    width: 265px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 0.5em;
+}
+
+.place {
+    font-weight: lighter;
+    font-size: 0.8em;
+    color: #717171;
+}
+
+.place-bold {
+    color: black;
+}
+
+.place-desc {
+    font-size: 0.9em;
+}
+
+.booking-links {
+    cursor: pointer;
+}
+
+.bookings {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 0.85em;
+}
+
+.booking-button {
+    width: 10em;
+    height: 3em;
+    font-size: 1em;
+    font-weight: 600;
+    color: #292929;
+    border-radius: 0.5em;
+    border: solid 1px black;
+    cursor: pointer;
+    margin-top: 1em;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.booking-button:hover {
+    color: #424141;
+}
+
+
+/* When are you traveling */
+
+.travelling {
+    margin-top: -37em;
+    margin-bottom: 5em;
+}
+
+#travel {
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+#add-dates {
+    color: #717171;
+    font-size: 0.9em;
+    margin-top: -1em;
+}
+
+#dates-button {
+    font-size: 1em;
+    color: white;
+    width: 7.5em;
+    height: 3em;
+    border-radius: 0.5em;
+    border: solid black;
+    background-color: #222222;
+    cursor: pointer;
+}
+
+#dates:hover {
+    background-color: black;
+}
+
+#airbnb {
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+#stays {
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+#US {
+    font-size: 1em;
+}
+
+.arrow {
+    width: 0.9em;
+    margin-left: 0.3em;
+    margin-right: 0.3em;
+}
+
+
+/* Footer */
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    border-top: solid 1px #d4d2d2b6;
+    font-size: 0.85em;
+    padding-bottom: 3.5em;
+    padding-top: 0.7em;
+}
+
+.foot {
+    color: black;
+    /* border: solid 1px red; */
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+}
+
+.fa-copyright {
+    padding: 0.6em;
+    font-weight: lighter;
+}
+
+
+/* footer icons */
+
+.icons {
+    width: 10em;
+    margin-left: 60em;
+    position: relative;
+    bottom: 6em;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.fa-facebook-f,
+.fa-twitter {
+    font-size: 1.1em;
+    padding: 0.6em;
+}
+
+#instagram {
+    width: 27px;
+    height: 27px;
+    margin: 0.3em;
+}
