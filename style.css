@@ -363,7 +363,7 @@ form {
     border-top-left-radius: 0.5em;
     border-top-right-radius: 0.5em;
     background-color: white;
-    z-index: 1;
+    z-index: 20;
     height: 28em;
     transform: scale(0);
     margin-left: 9em;
@@ -459,6 +459,7 @@ li {
 
 #overlay {
     position: fixed;
+    z-index: 1;
     opacity: 0;
     top: 0;
     left: 0;
