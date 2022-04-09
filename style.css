@@ -816,3 +816,286 @@ li {
     height: 27px;
     margin: 0.3em;
 }
+
+
+/* Media Queries */
+
+@media screen and (max-width: 740px) {
+    body {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    #airbnb-logo {
+        position: relative;
+        left: 11em;
+        top: 0.5em;
+    }
+    #headinghost {
+        display: none;
+    }
+    .header {
+        /* border: solid red 1px; */
+        transform: scale(1.5);
+        position: relative;
+        top: 0.5em;
+        left: 18em;
+    }
+    .heading3 {
+        width: 5em;
+        font-size: 0.9em;
+    }
+    #signup,
+    #login {
+        padding-left: 0.5em;
+        padding-right: 0.6em;
+    }
+    #help {
+        padding-left: 1em;
+    }
+    .airbnb-house {
+        opacity: 0;
+    }
+    .search-homes {
+        width: 55em;
+        transform: scale(1.3);
+        left: 5em;
+        bottom: 28em;
+        box-shadow: none;
+    }
+    h1 {
+        font-size: 1.6em;
+        right: 9em;
+        top: -1.5em;
+    }
+    form {
+        right: 1.6em;
+        top: -2em;
+        transform: scale(1.3);
+    }
+    #discover {
+        font-size: 1.2em;
+        width: 35em;
+        left: -4.2em;
+        bottom: 3.2em;
+    }
+    #location {
+        width: 52em;
+        left: 3.5em;
+    }
+    #location-label {
+        left: 4.7em;
+    }
+    #checkin {
+        /* border: solid 1px red; */
+        position: relative;
+        right: -0.8em;
+        width: 81em;
+    }
+    #checkout {
+        left: -2em;
+        right: 2em;
+        width: 78em;
+        margin-left: -4em;
+    }
+    .add-date {
+        /* border: solid 1px red; */
+        width: 50em;
+        left: 1.2em;
+    }
+    #checkin-label,
+    #checkout-label {
+        width: 20em;
+    }
+    #checkin-label {
+        left: 8.5em;
+    }
+    .people {
+        left: 2.8em;
+    }
+    #adults {
+        width: 26.1em;
+    }
+    #adults-label {
+        z-index: 1;
+    }
+    #children {
+        width: 26em;
+    }
+    #amenities {
+        right: 26.1em;
+    }
+    .buttons {
+        right: 9em;
+        top: 0.5em;
+    }
+    .search-button {
+        width: 52em;
+        left: 3.5em;
+        top: 2em;
+        border-radius: 0.7em;
+    }
+    #woman {
+        width: 73em;
+        height: auto;
+        bottom: 20em;
+        right: 1.5em;
+        border-radius: 2em;
+    }
+    .hosting {
+        bottom: 111em;
+        width: 72em;
+        left: -1em;
+        align-items: center;
+    }
+    #popup {
+        width: 2em;
+        height: 2em;
+        right: -0.5em;
+        top: -0.5em;
+    }
+    #question-mark {
+        font-size: 22px;
+    }
+    #earn {
+        font-size: 1.7em;
+    }
+    #learn-more {
+        font-size: 1.5em;
+        padding: 0.7em;
+        top: -1em;
+    }
+    .reviews {
+        width: 70em;
+        bottom: 33em;
+    }
+    #reviews {
+        font-size: 2.5em;
+        /* width: 50em; */
+        /* position: relative;
+        top: 1em; */
+    }
+    #guests {
+        font-size: 1.7em;
+    }
+    .home-section {
+        flex-direction: column;
+        right: 1em;
+    }
+    .homes {
+        width: 105%;
+        height: 105%;
+        border-radius: 1.5em;
+    }
+    .stars {
+        font-size: 2em;
+    }
+    .customer-review {
+        font-size: 2em;
+        position: relative;
+        bottom: 0.5em;
+    }
+    .guest-profile {
+        font-size: 2em;
+        position: relative;
+        bottom: 0.9em;
+        margin-bottom: 1em;
+    }
+    .descriptors {
+        bottom: 33em;
+        flex-direction: column;
+        width: 72em;
+        right: 1.2em;
+    }
+    .customer-support,
+    .host-req {
+        border-bottom: none;
+    }
+    .all-star,
+    .host-req {
+        border-top: none;
+    }
+    .fa-comment-alt {
+        font-size: 4em;
+    }
+    #star {
+        font-size: 4em;
+    }
+    #home-icon {
+        width: 4em;
+    }
+    #custom-sup,
+    #host-req,
+    #all-star {
+        font-size: 2.3em;
+        position: relative;
+        top: 0.5em;
+    }
+    .desc {
+        font-size: 1.7em;
+        top: 1.2em;
+    }
+    .booking-section {
+        bottom: 28em;
+    }
+    #booked {
+        font-size: 2.5em;
+    }
+    .bookings {
+        display: flex;
+        flex-direction: column;
+    }
+    .booked {
+        width: 186%;
+        height: 100%;
+        border-radius: 1.5em;
+    }
+    .place {
+        font-size: 1.5em;
+    }
+    .booked-details {
+        position: relative;
+        left: 27em;
+    }
+    .place-desc {
+        font-size: 1.6em;
+    }
+    .booking-button {
+        font-size: 2em;
+        width: 36em;
+    }
+    .travelling {
+        margin-top: -14em;
+        font-size: 1.6em;
+    }
+    #add-dates {
+        font-size: 1em;
+    }
+    #dates-button {
+        font-size: 1.2em;
+        width: 37.5em;
+    }
+    .links {
+        position: relative;
+        left: 0.2em;
+    }
+    .footer {
+        font-size: 1.5em;
+        width: 48em;
+    }
+    .icons {
+        display: none;
+    }
+    #first-period {
+        display: none;
+    }
+    .footer-details {
+        display: flex;
+        position: relative;
+        top: 1.5em;
+        right: 17.6em;
+    }
+    /* .footer-details::before {
+        content: "\a";
+        white-space: pre;
+    } */
+}

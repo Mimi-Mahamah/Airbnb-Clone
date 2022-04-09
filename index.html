@@ -2,6 +2,8 @@
 <html>
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/a20c4e6c94.js" crossorigin="anonymous"></script>
     <script defer src="index.js"></script>
     <title>Find Homes on Airbnb</title>
@@ -9,19 +11,23 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <header class="main-header">
-    <img id="airbnb-logo" src="./images/Airbnb_logo.svg" alt="airbnb logo">
+    <picture>
+        <source srcset="./images/Airbnb_logo.svg" media="(min-width: 740px)" />
+        <img src="./images/airbnb-logo-mobile.svg" alt="airbnb logo" id="airbnb-logo">
+    </picture>
+    <!-- <img id="airbnb-logo" src="./images/Airbnb_logo.svg" alt="airbnb logo"> -->
     <div class="header">
         <a href="https://www.airbnb.com/host/homes?">
-            <p class="heading3">Become a host</p>
+            <p class="heading3" id="headinghost">Become a host</p>
         </a>
         <a href="https://www.airbnb.com/help?audience=guest">
-            <p class="heading3">Help</p>
+            <p class="heading3" id="help">Help</p>
         </a>
         <a href="https://www.airbnb.com/signup_login">
-            <p class="heading3">Sign up</p>
+            <p class="heading3" id="signup">Sign up</p>
         </a>
         <a href="https://www.airbnb.com/login">
-            <p class="heading3">Log in</p>
+            <p class="heading3" id="login">Log in</p>
         </a>
     </div>
 </header>
@@ -96,7 +102,10 @@
     </div>
     <!-- Host Section -->
     <a href="https://www.airbnb.com/host/homes">
-        <img id="woman" src="./images/woman-in-home.jpg" alt="woman on counter">
+        <picture>
+            <source srcset="./images/woman-in-home.webp" media="(min-width: 741px)" />
+            <img src="./images/mobile-img.webp" alt="host" id="woman">
+        </picture>
     </a>
     <div class="hosting">
         <p id="hosting">Try hosting</p>
@@ -156,7 +165,7 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae dolore voluptate corrupti nesciunt nemo. Accusantium debitis necessitatibus repellat modi quod sequi delectus corrupti iste expedita nihil dolorum hic."</p>
+                <p class="customer-review">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae dolore voluptate corrupti nesciunt nemo. Accusantium debitis necessitatibus repellat modi quod sequi delectus corrupti iste expedita nihil dolorum hic."</p>
                 <div class="guest-profile">
                     <img src="./images/D'Andrea.jpg" alt="guest" class="guest">
                     <div class="description">
@@ -177,7 +186,7 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae dolore voluptate corrupti nesciunt nemo."</p>
+                <p class="customer-review">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae dolore voluptate corrupti nesciunt nemo."</p>
                 <div class="guest-profile">
                     <img src="./images/diane.jpg" alt="guest" class="guest">
                     <div class="description">
@@ -198,7 +207,7 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae dolore voluptate corrupti nesciunt nemo. Accusantium debitis necessitatibus repellat modi quod sequi delectus corrupti iste expedita nihil dolorum hic, itaque recusandae."</p>
+                <p class="customer-review">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae dolore voluptate corrupti nesciunt nemo. Accusantium debitis necessitatibus repellat modi quod sequi delectus corrupti iste expedita nihil dolorum hic, itaque recusandae."</p>
                 <div class="guest-profile">
                     <img src="./images/michelle.jpg" alt="guest" class="guest">
                     <div class="description">
@@ -226,7 +235,7 @@
             <p>
                 <span id="host-req">Global hosting requirements</span>
                 <br>
-                <span class="desc">hosts must meet hosting requirements and maintain a minimum rating to be on Airbnb.</span>
+                <span class="desc">All hosts must meet hosting requirements and maintain a minimum rating to be on Airbnb.</span>
             </p>
         </div>
         <div id="nopad" class="all-star">
@@ -246,11 +255,12 @@
             <a class="booking-links">
                 <img src="./images/book-1.jpg" alt="1st booking" class="booked">
                 <p class="place">Entire chalet in Skykomish
-                    <span>
+                    <span class="booked-details">
                     <i class="fas fa-star"></i>
-                </span>
+                    
                     <span class="place-bold">4.85</span>
                     <span>(692)</span>
+                    </span>
                 </p>
                 <p class="place-desc">Tye Haus - A-Frame Cabin
                     <br>
@@ -261,11 +271,11 @@
             <a class="booking-links">
                 <img src="./images/book-2.jpg" alt="2nd booking" class="booked">
                 <p class="place">Treehouse in Van Zandt County
-                    <span>
+                    <span class="booked-details">
                     <i class="fas fa-star"></i>
-                </span>
                     <span class="place-bold">5</span>
                     <span>(73)</span>
+                    </span>
                 </p>
                 <p class="place-desc">Southern Dream-Brand New Lux...
                     <br>
@@ -276,11 +286,11 @@
             <a class="booking-links">
                 <img src="./images/book-3.jpg" alt="2nd booking" class="booked">
                 <p class="place">Entire guesthouse in Tucson
-                    <span>
+                    <span class="booked-details">
                     <i class="fas fa-star"></i>
-                </span>
                     <span class="place-bold">4.95</span>
                     <span>(656)</span>
+                    </span>
                 </p>
                 <p class="place-desc">Tucson Poet's Studio
                     <br>
@@ -291,11 +301,11 @@
             <a class="booking-links">
                 <img src="./images/book-4.jpg" alt="2nd booking" class="booked">
                 <p class="place">Farm stay in Saunderstown
-                    <span>
+                    <span class="booked-details">
                     <i class="fas fa-star"></i>
-                </span>
                     <span class="place-bold">4.86</span>
                     <span>(525)</span>
+                    </span>
                 </p>
                 <p class="place-desc">Farm on the Coast - Near Newport
                     <br>
@@ -320,22 +330,26 @@
         <br>
         <br>
         <br>
-        <a href="https://www.airbnb.com/" id="airbnb">Airbnb</a> <img src="https://img.icons8.com/material-outlined/24/000000/forward.png" class="arrow" />
-        <a href="https://www.airbnb.com/s/homes" id="stays">Stays</a>
-        <img src="https://img.icons8.com/material-outlined/24/000000/forward.png" class="arrow" />
-        <span id="US">United States</span>
+        <section class="links">
+            <a href="https://www.airbnb.com/" id="airbnb">Airbnb</a> <img src="https://img.icons8.com/material-outlined/24/000000/forward.png" class="arrow" />
+            <a href="https://www.airbnb.com/s/homes" id="stays">Stays</a>
+            <img src="https://img.icons8.com/material-outlined/24/000000/forward.png" class="arrow" />
+            <span id="US">United States</span>
+        </section>
     </section>
 </body>
 <footer>
     <section class="footer">
         <i class="far fa-copyright"></i>
         <p class="foot">2022 Airbnb,Inc. All rights reserved</p>
-        <p class="foot">.</p>
-        <p class="foot">Privacy</p>
-        <p class="foot">.</p>
-        <p class="foot">Terms</p>
-        <p class="foot">.</p>
-        <p class="foot">Site Map</p>
+        <span class="footer-details">
+            <p class="foot" id="first-period">.</p>
+            <p class="foot-priv" id="foot-priv">Privacy</p>
+            <p class="foot">.</p>
+            <p class="foot">Terms</p>
+            <p class="foot">.</p>
+            <p class="foot">Site Map</p>
+        </span>
     </section>
     <section class="icons">
         <i class="fab fa-facebook-f"></i>
