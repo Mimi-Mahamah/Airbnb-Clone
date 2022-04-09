@@ -781,6 +781,10 @@ li {
     padding-top: 0.7em;
 }
 
+.footer-details {
+    display: flex;
+}
+
 .foot {
     color: black;
     /* border: solid 1px red; */
