@@ -824,7 +824,7 @@ li {
 
 /* Media Queries */
 
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 768px) and (min-width: 320px) {
     body {
         padding-left: 50px;
         padding-right: 50px;
@@ -1049,7 +1049,7 @@ li {
         flex-direction: column;
     }
     .booked {
-        width: 186%;
+        width: 70em;
         height: 100%;
         border-radius: 1.5em;
     }
@@ -1057,6 +1057,7 @@ li {
         font-size: 1.5em;
     }
     .booked-details {
+        width: 15em;
         position: relative;
         left: 27em;
     }
